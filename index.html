@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<META http-quiv="Content-Type" content="text/html"; charset="utf-8"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="icon" href="/img/logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ko"></script>
+	<title>Daejin Computer Engineering</title>
+</head>	
+<body onload="initialize()">
+	<div class="container">	
+		<div class="row main-nav">
+			<img src="./img/logo_2.png" class="logo">
+		</div>
+	</div>
+	<nav class="navbar navbar-default nav-theme">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed menu-btn-box" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">컴퓨터공학과</a>
+			</div>
+
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#introduce">학과소개</a></li>
+					<li><a href="#lab">연구소</a></li>
+					<li><a href="#question">질문하기</a></li>
+					<li><a href="#questionlist">질문목록</a></li>
+                    <li><a href="#waytocome">오시는길</a></li>
+				</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="slide">
+		<img src="./img/computer_1.jpg">
+	</div>
+	<div class = "container-fluid full-width" id="introduce" >
+		<div class = "col-md-6 intro-1">
+			<h1>휴먼IT융합학부</h1>
+			<span>전기기기제어, 의료기기, 로봇소재, 메카트로닉스 등 첨단 산업분야의 사회적 수요 및 기업수요, 최신 트렌드에 탄력적으로 대응하기 위해 연계학과간 융합 교육 시스템을 구축하고 창의융합적 과학기술인재, 창조경제형 융합인재 양성과 함께 신융합분야를 창출하고자 함 </span>
+		</div>
+		<div class = "col-md-6 intro-2">
+			<h1>컴퓨터공학과</h1>
+			<span>소프트웨어융합전공은 소프트웨어뿐만 아니라 다양한 학문과의 융합능력을 함양하기 위한 교육과정을 제공 운영하며 이를 기반으로 창의적이고 복합적인 소프트웨어 개발 능력을 갖춘 인재 양성을 목표로 합니다.
+			</span>
+		</div>
+	</div>
+
+	<div class = "container-fluid full-width"  >
+		<div class = "col-md-12 intro-3" id="lab">
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/pl.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">프로그래밍 언어 연구실</h4>
+					<h5 class="desc">
+						본 실험실은 컴퓨터 시스템을 구동하는 명령인 프로그래밍 언어를 학습하여 소프트웨어 프로그램의 구조에 대해 파악하고 Model View Controller framework model, Linux Operation System과 같은 전반적인 Server-Client구조, 네트워킹 시스템에 대해 연구하며 프로그래밍 언어 및 전반적인 Computer Engineering에 대한 전문성을 연구합니다.
+					</h5>
+				</div>
+			</div>
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/ai.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">인공지능실험실</h4>
+					<h5 class="desc">
+						본 실험실은 인공지능 학문 영역의 전반적인 이론과 응용 시스템 구현을 연구하는 실험실입니다. 인공지능 분야에 대두되는 지능형 에이전트 기법을 연구, 응용 시스템을 구현합니다. 또한 응용 도메인에 따라 다양하게 적용될 수 있는 지능형 에이전트들과 지능화에 요구되는 인공지능기법을 연구하여 에이전트 시스템을 개발합니다.
+					</h5>
+				</div>
+			</div>
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/db.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">데이터베이스 응용 시스템 실험실</h4>
+					<h5 class="desc">
+						21C의 컴퓨터 및 정보시스템의 모든 분야에서 중요한 역할을 해오고 있는 데이터베이스는 다양한 분야에서 많은 기술 개발이 활발히 진행되고 있습니다. 데이터베이스 실험실에서는 데이터베이스 시스템의 기본 개념과 응용 기술의 트랜드를 학습하고 연구하며, 졸업 후에도 많은 졸업생들이 첨단 IT분야에서 그 능력을 발휘하고 있습니다
+					</h5>
+				</div>
+			</div>
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/os.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">분산 및 운영체제 실험실</h4>
+					<h5 class="desc">
+						저희 분산 및 운영체제 실험실은 운영체제 내의 소프트웨어 계층을 최적화 하고, 대용량 데이터들을 효과적으로 처리하는 분산 및 병렬 프레임워크를 구현하고 개선하는 연구를 진행하고 있습니다.
+					</h5>
+				</div>
+			</div>
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/algorism.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">알고리즘 실험실</h4>
+					<h5 class="desc">
+						본 실험실에서는 문제를 해결하기 위해 명확히 정의된 규칙과 절차의 모임을 뜻하는 알고리즘에 대하여 공부를 하고 있으며, 같은 결과를 구하는 처리에서도 알고리즘에 따라 시간이나 프로그램의 성능은 크게 좌우되기 때문에 컴퓨터공학과에서 알고리즘이란 학문은 매우 중요한 학문 중 하나입니다
+					</h5>
+				</div>
+			</div>
+			<div class="col-md-4 info">
+				<div class="icon icon-info icon-round icon-lg">
+					<img src="./img/mess.jpg" class="logo">
+				</div>
+				<div class="description">
+					<h4 class="info-title">MESS</h4>
+					<h5 class="desc">
+						본 실험실(Micro Embedded System & Security Laboratory)은 컴퓨터공학과의 컴퓨터실험 교과목들의 지원을 위하여 1994년에 설립되었으며 컴퓨터시스템의 설계 분야 및 임베디드시스템 관련 분야에 대한 연구와 실험을 수행하고 있습니다. 최근에 다루는 주요 연구 주제로는 스마트폰 응용 프로그래밍, 블루투스 통신 시스템, 드론 및 마이크로로봇 제어, u-Healthcare 시스템, IoT/IoE 기기 등의 마이크로임베디드 시스템 분야들이 있습니다.
+					</h5>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+	<div class="row question" id="question">
+		<div class="col-md-6">
+			<form>
+				<div class="row-title">
+					<h1>
+						질문하기
+					</h1>
+				</div>
+				<div class="form-group">
+				    <label for="inputsm">제목</label>
+					<input class="form-control input-sm" id="inputsm" type="text" required>
+			    </div>
+				<div class="form-group">
+				    <label for="inputsm">내용</label>
+					<textarea class="form-control input-sm" id="inputsm" type="text" required>
+
+					</textarea>
+			    </div>
+			    <div class="form-group">
+				    <label for="inputsm">작성자</label>
+					<input class="form-control input-sm" id="inputsm" type="text" required>
+			    </div>
+			    <div class="form-group">
+				    <label for="inputsm">비밀번호</label>
+					<input class="form-control input-sm" id="inputsm" type="text" required>
+			    </div>
+			    <div class="fl-right">
+			    	<button type="submit" class="btn btn-default navbar-btn">작성하기</button>
+			    </div>
+			</form>
+		</div>
+		<div class="col-md-6" id="questionlist">
+			<div class="row-title">
+				<h1>
+					목록
+				</h1>
+			</div>
+  
+			<table  class="table">
+				<thead>
+					<tr>
+						<th style="width: 10%">#</th>
+						<th style="width: 70%">제목</th>
+						<th style="width: 20%">작성자</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="fl-right">
+		    	<button type="submit" class="btn btn-default navbar-btn">목록 </button>
+		    </div>
+		</div>
+	</div>
+
+	<div class="row" id="waytocome">
+		<div id="map_canvas" style="height:300px;"></div> 
+	</div>
+
+	<div class="container-fluid full-width footer">
+		<div class="footer-box">
+			<div class="col-md-3 col-xs-12">
+				<img src="./img/logo_2.png" class="logo">
+			</div>
+			<div class="col-md-9 col-xs-12 footer-text">
+				<span class="footer-text-1">
+					DAEJIN UNIVERSITY, 1007 HOGUK-RO, POCHEON-SI, GYEONGGI-DO 487-711, KOREA<br>
+				</span>
+				<span class="footer-text-2">
+					COPYRIGHT 2015 DAEJIN UNIVERSITY, ALL RIGHTS RESERVED.
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
